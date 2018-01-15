@@ -1,0 +1,33 @@
+$ git init
+
+$ git add .
+$ git commit -m "first post"
+
+$ git remote add origin https://github.com/username/jekyll_demo.git
+$ git push origin gh-pages
+
+
+*********************2***********************
+记录一些使用git过程中的bug
+
+RT ! [rejected] master -> master (fetch first)
+
+在push远程服务器的时候发现出现此错误；原因是没有同步远程的master
+
+所以我们需要先同步一下
+
+a.--> git pull origin master
+
+b.--> git push origin master
+
+resolved!
+********************************************
+
+**********************3***********************
+git commit 过程中Changes not staged for commit:
+需要先git add 后在commit 然后 push
+
+
+*************************4******
+　　git status命令看看结果：
+
